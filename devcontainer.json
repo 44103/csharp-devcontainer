@@ -1,0 +1,24 @@
+{
+  "name": "C#",
+  "dockerComposeFile": [
+    "docker-compose.yml"
+  ],
+  "service": "csharp",
+  "remoteUser": "root",
+  "workspaceFolder": "/work",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.shell.linux": "zsh"
+      },
+      "extensions": [
+        "sleistner.vscode-fileutils",
+        "shardulm94.trailing-spaces",
+        "christian-kohler.path-intellisense",
+        "fabiospampinato.vscode-todo-plus",
+        "mhutchie.git-graph"
+      ]
+    }
+  },
+  "initializeCommand": "touch .devcontainer/.zsh_history"
+}
